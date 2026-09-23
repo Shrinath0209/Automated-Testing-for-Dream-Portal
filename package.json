@@ -1,0 +1,35 @@
+{
+  "name": "dream-portal-automation",
+  "version": "1.0.0",
+  "description": "Enterprise-grade automated testing suite for Dream Portal using Playwright, TypeScript, and AI-driven classification",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:portal": "playwright test tests/01-dream-portal.spec.ts",
+    "test:diary": "playwright test tests/02-dreams-diary.spec.ts",
+    "test:summary": "playwright test tests/03-dreams-total.spec.ts",
+    "test:e2e": "playwright test tests/04-portal-journey.spec.ts",
+    "test:ai": "playwright test tests/05-ai-validation.spec.ts",
+    "report": "playwright show-report",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "page-object-model",
+    "qa-automation",
+    "ai-testing",
+    "e2e-testing"
+  ],
+  "author": "Shrinath",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.13.0",
+    "dotenv": "^16.4.7",
+    "openai": "^4.85.0",
+    "typescript": "^5.7.3"
+  }
+}
